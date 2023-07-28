@@ -4,13 +4,48 @@ module.exports = {
 	darkMode: ['class', '[data-mode="dark"]'],
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				red: '#ED6A5E',
+				yellow: '#F4BF4F',
+				green: '#61C554',
+			},
+			backgroundImage: {
+				profile: "url('/src/assets/profile.jpg')",
+			},
+		},
 	},
 	plugins: [
 		require('tailwindcss-themer')({
 			defaultTheme: {
 				extend: {
 					colors: {
+						bg: {
+							100: '#F6F6F6',
+							200: '#E9E9E9',
+						},
+					},
+				},
+			},
+			themes: [
+				{
+					name: 'my-theme',
+					extend: {
+						colors: {
+							bg: {
+								100: '#F6F6F6',
+								200: '#E9E9E9',
+							},
+						},
+					},
+				},
+			],
+		}),
+	],
+};
+
+/*
+colors: {
 						primary: {
 							100: '#CFAE8E',
 							200: '#b19172',
@@ -30,26 +65,6 @@ module.exports = {
 							300: '#c5b7a5',
 						},
 					},
-				},
-			},
-			themes: [
-				{
-					name: 'my-theme',
-					extend: {
-						colors: {
-							bg: {
-								100: '#e7d6f8',
-							},
-						},
-					},
-				},
-			],
-		}),
-	],
-};
-
-/*
-
 
 
 					module.exports = {

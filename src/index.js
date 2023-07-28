@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import { ConfigProvider } from './context/ConfigContext';
 import './index.css';
+import About from './pages/About';
+import Education from './pages/Education';
 import Locales from './utils';
 
 const router = createBrowserRouter([
@@ -15,7 +17,16 @@ const router = createBrowserRouter([
 			</Locales>
 		),
 		errorElement: <div>Error</div>,
-		children: [{}],
+		children: [
+			{
+				path: '',
+				element: <About />,
+			},
+			{
+				path: 'school',
+				element: <Education />,
+			},
+		],
 	},
 ]);
 
