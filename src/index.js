@@ -5,6 +5,7 @@ import App from './App';
 import { ConfigProvider } from './context/ConfigContext';
 import './index.css';
 import About from './pages/About';
+import Config from './pages/Config';
 import Education from './pages/Education';
 import Locales from './utils';
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
 			{
 				path: '',
 				element: <About />,
+			},
+			{
+				path: 'config',
+				element: <Config />,
 			},
 			{
 				path: 'school',

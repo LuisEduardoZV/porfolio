@@ -6,12 +6,32 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				red: '#ED6A5E',
-				yellow: '#F4BF4F',
-				green: '#61C554',
+				'red-window': '#ED6A5E',
+				'yellow-window': '#F4BF4F',
+				'green-window': '#61C554',
+				'blue-icon-full': '#3478F6',
+				'blue-icon-low': '#5093F7',
+				'red-icon-full': '#EB445A',
+				'red-icon-low': '#ED6A83',
+				'gray-icon-full': '#8E8E93',
+				'gray-icon-low': '#B2B2B6',
+				'orange-icon-full': '#EB4E3D',
+				'orange-icon-low': '#ED766B',
+				'purple-icon-full': '#5856CF',
+				'purple-icon-low': '#807EE2',
+				'light-blue-icon-full': '#71BCEB',
+				'light-blue-icon-low': '#9DDEF8',
+				'green-icon-full': '#33C558',
+				'green-icon-low': '#72EB6C',
+				'gray-text': '#5A5553',
+				'gray-border': '#F1EBE9',
 			},
 			backgroundImage: {
 				profile: "url('/src/assets/profile.jpg')",
+			},
+			boxShadow: {
+				'input-radio': 'inset 0 0 0 0.4375em #a0f05c',
+				'input-radio-before': 'inset 0 0 0 0.125em #a0f05c',
 			},
 		},
 	},
@@ -21,8 +41,8 @@ module.exports = {
 				extend: {
 					colors: {
 						bg: {
-							100: '#F6F6F6',
-							200: '#E9E9E9',
+							100: '#F5F0EC',
+							200: '#E9E4E0',
 						},
 					},
 				},
