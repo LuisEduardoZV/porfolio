@@ -7,6 +7,9 @@ const initialState = {
 	...defaultConfig,
 	onChangeLocale: () => {},
 	onChangeTheme: () => {},
+	onChangeAccent: () => {},
+	onChangeFont: () => {},
+	onChangeBlur: () => {},
 };
 
 const ConfigContext = createContext(initialState);
@@ -15,6 +18,9 @@ function ConfigProvider({ children }) {
 	const [config, setConfig] = useLocalStorage('portfolio-config', {
 		locale: initialState.locale,
 		theme: initialState.theme,
+		accent: initialState.accent,
+		font: initialState.font,
+		bgblur: initialState.bgblur,
 	});
 
 	const onChangeLocale = (locale) => {
@@ -31,12 +37,36 @@ function ConfigProvider({ children }) {
 		});
 	};
 
+	const onChangeAccent = (accent) => {
+		setConfig({
+			...config,
+			accent,
+		});
+	};
+
+	const onChangeFont = (font) => {
+		setConfig({
+			...config,
+			font,
+		});
+	};
+
+	const onChangeBlur = (bgblur) => {
+		setConfig({
+			...config,
+			bgblur,
+		});
+	};
+
 	return (
 		<ConfigContext.Provider
 			value={{
 				...config,
 				onChangeLocale,
 				onChangeTheme,
+				onChangeAccent,
+				onChangeFont,
+				onChangeBlur,
 			}}>
 			{children}
 		</ConfigContext.Provider>

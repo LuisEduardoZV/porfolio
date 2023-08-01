@@ -4,11 +4,11 @@ import useConfig from './hooks/useConfig';
 
 //<FormattedMessage id="tittle" />
 const App = () => {
-	const { theme } = useConfig();
+	const { theme, accent } = useConfig();
 	const { pathname } = useLocation();
 
 	return (
-		<main className={`${theme} min-h-screen flex flex-row bg-yellow-500`}>
+		<main className={`${theme} ${accent} min-h-screen flex flex-row bg-main-fondo bg-cover bg-center bg-no-repeat`}>
 			<AsideMenu path={pathname} />
 			<section className="flex w-5/6 h-full min-h-screen bg-bg-100">
 				<Outlet />

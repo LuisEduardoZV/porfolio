@@ -23,15 +23,31 @@ module.exports = {
 				'light-blue-icon-low': '#9DDEF8',
 				'green-icon-full': '#33C558',
 				'green-icon-low': '#72EB6C',
-				'gray-text': '#5A5553',
-				'gray-border': '#F1EBE9',
+				dark: {
+					200: '#3E454F',
+					100: '#1E1E1E',
+				},
+				main: {
+					100: '#F5F0EC',
+					200: '#E9E4E0',
+				},
+				cinnamon: {
+					100: '#F8E9D6',
+					200: '#CFAE8E',
+				},
+				lavanda: {
+					100: '#E9E4ED',
+					200: '#D6C6E1',
+				},
 			},
 			backgroundImage: {
 				profile: "url('/src/assets/profile.jpg')",
+				fondo: "url('/src/assets/fondo.jpeg')",
+				'main-fondo': "url('/src/assets/mainFondo.png')",
 			},
 			boxShadow: {
-				'input-radio': 'inset 0 0 0 0.4375em #a0f05c',
-				'input-radio-before': 'inset 0 0 0 0.125em #a0f05c',
+				'input-radio': 'inset 0 0 0 0.3375em',
+				'input-radio-before': 'inset 0 0 0 0.125em',
 			},
 		},
 	},
@@ -44,18 +60,104 @@ module.exports = {
 							100: '#F5F0EC',
 							200: '#E9E4E0',
 						},
+						'main-text': '#5A5553',
+						'main-border': '#F1EBE9',
 					},
 				},
 			},
 			themes: [
 				{
-					name: 'my-theme',
+					name: 'dark',
 					extend: {
 						colors: {
 							bg: {
-								100: '#F6F6F6',
-								200: '#E9E9E9',
+								200: '#3E454F',
+								100: '#1E1E1E',
 							},
+							'main-text': '#fff',
+							'main-border': '#000',
+						},
+					},
+				},
+				{
+					name: 'cinnamon',
+					extend: {
+						colors: {
+							bg: {
+								100: '#F8E9D6',
+								200: '#CFAE8E',
+							},
+							'main-text': '#4D3830',
+							'main-border': '#b19172',
+						},
+					},
+				},
+				{
+					name: 'lavanda',
+					extend: {
+						colors: {
+							bg: {
+								100: '#E9E4ED',
+								200: '#D6C6E1',
+							},
+							'main-text': '#4A4A4A',
+							'main-border': '#D6C6E1',
+						},
+					},
+				},
+				{
+					name: 'acc-default',
+					extend: {
+						colors: {
+							'acc-main': '#3478F6',
+						},
+					},
+				},
+				{
+					name: 'acc-green',
+					extend: {
+						colors: {
+							'acc-main': '#33C558',
+						},
+					},
+				},
+				{
+					name: 'acc-red',
+					extend: {
+						colors: {
+							'acc-main': '#EB445A',
+						},
+					},
+				},
+				{
+					name: 'acc-orange',
+					extend: {
+						colors: {
+							'acc-main': '#EB4E3D',
+						},
+					},
+				},
+				{
+					name: 'acc-purple',
+					extend: {
+						colors: {
+							'acc-main': '#5856CF',
+						},
+					},
+				},
+				{
+					name: 'acc-brown',
+					extend: {
+						colors: {
+							'acc-main': '#835c36',
+						},
+					},
+				},
+				{
+					name: 'acc-yellow',
+					extend: {
+						colors: {
+							'acc-main': '#F4BF4F',
 						},
 					},
 				},
@@ -63,61 +165,3 @@ module.exports = {
 		}),
 	],
 };
-
-/*
-colors: {
-						primary: {
-							100: '#CFAE8E',
-							200: '#b19172',
-							300: '#6d5236',
-						},
-						accent: {
-							100: '#E8B98F',
-							200: '#835c36',
-						},
-						text: {
-							100: '#4D3830',
-							200: '#7a6259',
-						},
-						bg: {
-							100: '#F8E9D6',
-							200: '#eedfcc',
-							300: '#c5b7a5',
-						},
-					},
-
-
-					module.exports = {
-						darkMode: ['class', '[data-theme="dark"]'],
-						theme: {
-							colors: {
-								'primary-100': '#CFAE8E',
-								'primary-200': '#b19172',
-								'primary-300': '#6d5236',
-								'accent-100': '#E8B98F',
-								'accent-200': '#835c36',
-								'text-100': '#4D3830',
-								'text-200': '#7a6259',
-								'bg-100': 'rgb(var(--bg-100) / <alpha-value>)',
-								'bg-200': '#eedfcc',
-								'bg-300': '#c5b7a5',
-							},
-							extend: {
-								colors: {
-									'primary-100': '#CFAE8E',
-									'primary-200': '#b19172',
-									'primary-300': '#6d5236',
-									'accent-100': '#E8B98F',
-									'accent-200': '#835c36',
-									'text-100': '#4D3830',
-									'text-200': '#7a6259',
-									'bg-100': 'rgb(var(--bg-100) / <alpha-value>)',
-									'bg-200': '#eedfcc',
-									'bg-300': '#c5b7a5',
-								},
-							},
-						},
-						plugins: [],
-					};
-					
-*/
