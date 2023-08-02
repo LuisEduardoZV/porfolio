@@ -36,5 +36,15 @@
 	"config-color": "Accent colour",
 	"config-font": "Font type",
 	"config-blur": "Allow transparencies in the system",
-	"config-language": "Change system language"
+	"config-language": "Change system language",
+
+	"wifi-info": "A Wi-Fi network is required to use NoAirDrop, NoAirPlay, forget notifications and improved location accuracy.",
+	"wifi-subtitle": "Networks",
+	"wifi-other": "Other...",
+	"wifi-info-conect-pt1": "The Wi-Fi network",
+	"wifi-info-conect-pt2": "requires a WPA2 password to connect",
+	"wifi-password": "Password",
+	"wifi-show": "Show password",
+	"wifi-cancel": "Cancel",
+	"wifi-send": "Access"
 }

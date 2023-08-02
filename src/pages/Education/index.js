@@ -1,4 +1,7 @@
+import MainCard from '../../components/Cards/MainCard';
+
 const Education = () => {
-	return <div>Edication</div>;
+	return <MainCard>Educacion</MainCard>;
 };
+
 export default Education;

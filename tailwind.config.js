@@ -44,10 +44,19 @@ module.exports = {
 				profile: "url('/src/assets/profile.jpg')",
 				fondo: "url('/src/assets/fondo.jpeg')",
 				'main-fondo': "url('/src/assets/mainFondo.png')",
+				'gradiant-loader': 'linear-gradient(0deg ,#766DF480 50%,#766DF4FF 0) center/4px 100%',
 			},
 			boxShadow: {
 				'input-radio': 'inset 0 0 0 0.3375em',
 				'input-radio-before': 'inset 0 0 0 0.125em',
+			},
+			keyframes: {
+				loader: {
+					'100%': { transform: 'rotate(1turn)' },
+				},
+			},
+			animation: {
+				loader: 'loader 1s infinite steps(12)',
 			},
 		},
 	},
@@ -61,6 +70,7 @@ module.exports = {
 							200: '#E9E4E0',
 						},
 						'main-text': '#5A5553',
+						'main-text-low': '#827f7e',
 						'main-border': '#F1EBE9',
 					},
 				},
@@ -75,6 +85,7 @@ module.exports = {
 								100: '#1E1E1E',
 							},
 							'main-text': '#fff',
+							'main-text-low': '#fff',
 							'main-border': '#000',
 						},
 					},
@@ -110,6 +121,7 @@ module.exports = {
 					extend: {
 						colors: {
 							'acc-main': '#3478F6',
+							'acc-main-low': '#5093F7',
 						},
 					},
 				},
@@ -118,6 +130,7 @@ module.exports = {
 					extend: {
 						colors: {
 							'acc-main': '#33C558',
+							'acc-main-low': '#72EB6C',
 						},
 					},
 				},
@@ -126,6 +139,7 @@ module.exports = {
 					extend: {
 						colors: {
 							'acc-main': '#EB445A',
+							'acc-main-low': '#ED6A83',
 						},
 					},
 				},
@@ -134,6 +148,7 @@ module.exports = {
 					extend: {
 						colors: {
 							'acc-main': '#EB4E3D',
+							'acc-main-low': '#ED766B',
 						},
 					},
 				},
@@ -142,6 +157,7 @@ module.exports = {
 					extend: {
 						colors: {
 							'acc-main': '#5856CF',
+							'acc-main-low': '#807EE2',
 						},
 					},
 				},
@@ -150,6 +166,7 @@ module.exports = {
 					extend: {
 						colors: {
 							'acc-main': '#835c36',
+							'acc-main-low': '#835c36',
 						},
 					},
 				},
@@ -158,6 +175,7 @@ module.exports = {
 					extend: {
 						colors: {
 							'acc-main': '#F4BF4F',
+							'acc-main-low': '#F4BF4F',
 						},
 					},
 				},

@@ -36,5 +36,15 @@
 	"config-color": "Color de acento",
 	"config-font": "Tipo de letra",
 	"config-blur": "Permitir las transparencias en el sistema",
-	"config-language": "Cambiar idioma del sistema"
+	"config-language": "Cambiar idioma del sistema",
+
+	"wifi-info": "Se requiere de una red Wi-Fi para usar NoAirDrop, NoAirPlay, las notificaciones de olvido y la precisión de ubicación mejorada.",
+	"wifi-subtitle": "Redes",
+	"wifi-other": "Otra...",
+	"wifi-info-conect-pt1": "La red Wi-Fi",
+	"wifi-info-conect-pt2": "requiere una contraseña WPA2 para conectarse",
+	"wifi-password": "Contraseña",
+	"wifi-show": "Mostrar contraseña",
+	"wifi-cancel": "Cancelar",
+	"wifi-send": "Acceder"
 }

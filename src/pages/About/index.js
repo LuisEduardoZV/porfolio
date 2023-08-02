@@ -1,5 +1,7 @@
+import MainCard from '../../components/Cards/MainCard';
+
 const About = () => {
-	return <div>About me</div>;
+	return <MainCard>About me</MainCard>;
 };
 
 export default About;
